@@ -4,28 +4,39 @@
     "username": "frontendmaster"
   },
   "pet": [
-    "1",
-    "2",
-    "3",
     {
       "id": "EXKiCnu8c9GgzLA-6RWYx",
       "createdAt": 1579126928836,
-      "name": "Vaska",
+      "name": "Vaska1",
       "type": "CAT",
       "user": "jBWMVGjm50l6LGwepDoty"
     },
     {
       "id": "Y1FgqeAk3_6Pep8AvH8C_",
       "createdAt": 1579126951155,
-      "name": "Vaska",
+      "name": "Vaska2",
       "type": "CAT",
       "user": "jBWMVGjm50l6LGwepDoty"
     },
     {
       "id": "ORCccuZAFz-akKX9p7H-B",
       "createdAt": 1579126954616,
-      "name": "Vaska",
+      "name": "Vaska3",
       "type": "CAT",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    },
+    {
+      "id": "pHztNzPBz4HOZwW8GSdzV",
+      "createdAt": 1579457206093,
+      "name": "Dog12",
+      "type": "DOG",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    },
+    {
+      "id": "tu1DVmMksRZC4yAC03epw",
+      "createdAt": 1579457410974,
+      "name": "dwfwe",
+      "type": "DOG",
       "user": "jBWMVGjm50l6LGwepDoty"
     }
   ]

@@ -7,7 +7,7 @@ import Loader from '../components/Loader'
 
 const query = gql`
   query queryPets {
-      pets(input: {type: CAT}) {
+      pets {
         id
         name
         type
@@ -16,12 +16,25 @@ const query = gql`
     }
 `;
 
+const mutation = gql`
+  mutation addNewPet($name: String!, $type: PetType!) {
+    addPet(input: {name: $name, type: $type}) {
+      id
+      name
+      type
+      img
+    }
+  }
+`;
+
 export default function Pets () {
-  const [modal, setModal] = useState(false);
-  const {loading, error, data} = useQuery(query);
+  const [modal, setModal] = useState(false)
+  const {loading, error, data} = useQuery(query)
+  const [addNewPet, { NewPetData}] = useMutation(mutation);
 
   const onSubmit = input => {
-    setModal(false)
+    setModal(false);
+    addNewPet({variables: {type: input.type, name: input.name}});
   };
   
   if (modal) {
